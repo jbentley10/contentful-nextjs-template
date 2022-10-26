@@ -1,0 +1,53 @@
+.heroContainer {
+  background-blend-mode: darken;
+  background-size: cover;
+  z-index: 10;
+  position: relative;
+  padding: 9em 4em 0rem 1rem;
+
+  @media (max-width: 920px) {
+    padding: 8em 4em 0em 1em;
+  }
+
+  @media (max-width: 640px) {
+    padding: 3em 1em 0rem 1rem;
+  }
+}
+
+.subheroContainer {
+  @extend .heroContainer;
+}
+
+.textContainer {
+  color: #333333;
+  text-align: left;
+  width: 100%;
+
+  @media (max-width: 640px) {
+    text-align: center;
+    padding-top: 10vh;
+  }
+}
+
+.heading1,
+.heading2 {
+  cursor: default;
+}
+
+.heading1 {
+  font-size: 50px;
+  line-height: 55px;
+
+  @media (max-width: 640px) {
+    line-height: 55px;
+    padding-bottom: 2vh;
+  }
+}
+
+.heading2 {
+  padding: 1rem 0;
+}
+
+.button {
+  margin-top: 1.5rem;
+}
